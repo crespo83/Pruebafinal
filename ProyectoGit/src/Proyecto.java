@@ -5,8 +5,7 @@ public class Proyecto {
 		// TODO Auto-generated method stub
 
 		System.out.println("Cambio");
-		System.out.println("Cambio2");
-		System.out.println("Cambio3");
+	
 		
 	}
 
