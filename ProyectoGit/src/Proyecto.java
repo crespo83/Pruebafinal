@@ -11,6 +11,10 @@ public class Proyecto {
 		System.out.println("Cambio2");
 	
 		
+		
+		System.out.println("Cambio2");
+		System.out.println("Cambio2");
+		
 	}
 
 }
