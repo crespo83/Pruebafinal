@@ -10,11 +10,13 @@
 <body>
 
     <?php
-
+    $n;
     $mayus;
     $minus;
     $caracter;
     $numero;
+    $cociente;
+    $resto;
 
     function formulario()
     {
@@ -40,29 +42,73 @@ Numero de caracteres <input type="text" name="num" >
 
     function Controlygenerarcontrasenya()
     {
+
+        global $n;
+        global $mayus;
+        global $minus;
+        global $caracter;
+        global $numero;
+        global $cociente;
+        global $resto;
+
+        if ($mayus == 1 && $mayus == 1) {
+
+            $resto = $n % 2;
+            $cociente = $n / 2;
+        } else {
+            # code...
+        }
     }
 
 
     function generarcontraseña()
     {
+        global $n;
+
+        echo rand($n, $n);
+        echo rand($n, $n);
+        echo rand($n, $n);
     }
+
+
+
+
+
+
+
+
+
+
 
     function seleccioncheck()
     {
 
         if (isset($_REQUEST['check1'])) {
+
+            global $mayus;
+            $mayus++;
         }
 
         if (isset($_REQUEST['check2'])) {
+            global $minus;
+            $minus++;
         }
 
         if (isset($_REQUEST['check3'])) {
+
+            global $numero;
+            $numero++;
         }
 
         if (isset($_REQUEST['check4'])) {
+
+            global $caracter;
+            $caracter++;
         }
 
         if (isset($_POST['numeros'])) {
+
+            global $n;
 
             $n = $_POST['num'];
         }
@@ -81,8 +127,6 @@ Numero de caracteres <input type="text" name="num" >
 
 
             echo $n;
-
-            seleccioncheck();
         }
     }
 
