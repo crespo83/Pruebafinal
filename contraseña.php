@@ -66,8 +66,7 @@ Numero de caracteres <input type="text" name="num" >
         global $n;
 
         echo rand($n, $n);
-        echo rand($n, $n);
-        echo rand($n, $n);
+        echo $n;
     }
 
 
